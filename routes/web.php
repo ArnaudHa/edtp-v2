@@ -1,5 +1,6 @@
 <?php
 
+use App\Services\PlanningService;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,8 @@ Route::get('/', \App\Http\Livewire\Root::class);
 });*/
 
 Route::get('/test', [ \App\Http\Controllers\Controller::class, 'test' ]);
+
+Route::get('/sync', function () {
+    $service = new PlanningService();
+    $service->synchronize();
+});
