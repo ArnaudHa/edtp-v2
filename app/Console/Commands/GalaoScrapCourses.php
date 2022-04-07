@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\Services\DiscordService;
+use App\Services\PlanningService;
 use Illuminate\Console\Command;
 
 class GalaoScrapCourses extends Command
@@ -37,6 +39,12 @@ class GalaoScrapCourses extends Command
      */
     public function handle()
     {
+        $service = new PlanningService();
+        $service->synchronize();
+
+        $service = new DiscordService();
+        $service->postMessage("Synchro EDTP depuis Galao OK !");
+
         return Command::SUCCESS;
     }
 }

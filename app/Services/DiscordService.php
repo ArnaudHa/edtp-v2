@@ -7,14 +7,14 @@ use Illuminate\Support\Facades\Http;
 class DiscordService {
 
 
-    public function postMessage() : void
+    public function postMessage($message) : void
     {
         Http::post(env('DISCORD_WEBHOOK'), [
             //'content' => "Learning how to send notifications with DevDojo.com!",
             'embeds' => [
                 [
-                    'title' => 'coucou',
-                    'description' => "Discord Webhooks are great!",
+                    'title' => 'EDTP',
+                    'description' => $message,
                     'color' => '1111111',
                 ]
             ],
