@@ -3,6 +3,14 @@
 return [
 
     /*
+     * Config custom
+     */
+
+    'galao_login' => env('GALAO_LOGIN', null),
+    'galao_password' => env('GALAO_PASSWORD', null),
+    'discord_webhook' => env('DISCORD_WEBHOOK', null),
+
+    /*
     |--------------------------------------------------------------------------
     | Application Name
     |--------------------------------------------------------------------------

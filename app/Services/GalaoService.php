@@ -37,8 +37,8 @@ class GalaoService {
                 'ecole' => -1,
                 'ecole_type' => 1,
                 'centre' => 6,
-                'user' => env('GALAO_LOGIN'),
-                'password' => env('GALAO_PASSWORD'),
+                'user' => config('app.galao_login'),
+                'password' => config('app.galao_password'),
                 'ch_ecole' => -1,
                 'bouton' => 'Entrer dans GALAO',
             ]

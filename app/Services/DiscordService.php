@@ -9,7 +9,7 @@ class DiscordService {
 
     public function postMessage($message) : void
     {
-        Http::post(env('DISCORD_WEBHOOK'), [
+        Http::post(config('app.discord_webhook'), [
             //'content' => "Learning how to send notifications with DevDojo.com!",
             'embeds' => [
                 [
