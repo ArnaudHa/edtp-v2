@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/service-worker.js": "/service-worker.js",
+    "/css/galaxy/app.css": "/css/galaxy/app.css",
+    "/css/ocean/app.css": "/css/ocean/app.css",
+    "/css/forest/app.css": "/css/forest/app.css",
+    "/css/desert/app.css": "/css/desert/app.css",
+    "/css/classic/app.css": "/css/classic/app.css"
+}
