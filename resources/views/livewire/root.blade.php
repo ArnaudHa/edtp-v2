@@ -10,9 +10,9 @@
         <div class="tab-pane fade" id="pills-config" role="tabpanel">
             <livewire:settings />
         </div>
-        <div class="tab-pane fade" id="pills-dev" role="tabpanel">
+        <!--<div class="tab-pane fade" id="pills-dev" role="tabpanel">
             <livewire:devtools />
-        </div>
+        </div>-->
     </div>
 
     <ul class="nav nav-pills mt-auto w-100 d-flex justify-content-center bg-dark" id="pills-tab" role="tablist">
@@ -38,11 +38,11 @@
             </button>
         </li>
 
-        <li class="nav-item" role="presentation">
+        <!--<li class="nav-item" role="presentation">
             <button class="nav-link rounded-0 py-3" id="pills-dev-tab" data-bs-toggle="pill" data-bs-target="#pills-dev" type="button">
                 <i class="bi-activity"></i>
             </button>
-        </li>
+        </li>-->
     </ul>
 
 </div>
