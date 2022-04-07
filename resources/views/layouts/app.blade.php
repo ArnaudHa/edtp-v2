@@ -14,7 +14,7 @@
     <!-- Fonts -->
 
     <!-- Styles -->
-    <link href="{{ secure_asset('css/' . $theme . '/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/' . $theme . '/app.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -26,7 +26,7 @@
 
 @livewireScripts
 
-<script src="{{ secure_asset('js/app.js') }}" defer></script>
+<script src="{{ asset('js/app.js') }}" defer></script>
 
 </body>
 </html>

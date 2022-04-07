@@ -27,6 +27,12 @@
             <img class="illustration" src="images/weekend.png">
         @endif
 
+        @if(!in_array(\Carbon\Carbon::parse($date)->format('D'), [ 'Sat', 'Sun' ]) && sizeof($courses) === 0)
+            <h5>Entreprise</h5>
+            <img class="illustration" src="images/work.png">
+            <p>Ou alors jour férié ?</p>
+        @endif
+
         @foreach($courses as $course)
             <div class="card text-center mb-3">
                 <div class="card-header py-1">
