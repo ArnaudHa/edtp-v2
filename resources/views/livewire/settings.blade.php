@@ -54,7 +54,7 @@
         <hr>
 
         <div class="row justify-content-center">
-            <div class="col-4">
+            <div class="col-4 col-lg-2">
                 <p class="text-center w-100">Powered by :</p>
                 <a href="https://www.vultr.com/?ref=9095799-8H">
                     <img src="./images/vultr.png" alt="vultr" class="w-100">
