@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('edtp:scrap:courses')
+        $schedule->command('edtp:courses')
             ->hourly();
 
         /*$schedule->command('edtp:scrap:courses')

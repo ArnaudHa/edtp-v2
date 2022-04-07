@@ -11,7 +11,7 @@ class GalaoScrapCourses extends Command
      *
      * @var string
      */
-    protected $signature = 'edtp:scrap:courses';
+    protected $signature = 'edtp:courses';
 
     /**
      * The console command description.
