@@ -18,6 +18,9 @@
                 Suivant
                 <i class="bi-arrow-right"></i>
             </button>
+            <!--<button class="btn btn-primary btn-light rounded-pill ms-auto">
+                <i class="bi-view-list"></i>
+            </button>-->
         </div>
     </div>
 
@@ -34,7 +37,7 @@
         @endif
 
         @foreach($courses as $course)
-            <div class="card text-center mb-3">
+            <div class="card text-center mb-3 animate__animated animate__fadeInLeft animate__faster">
                 <div class="card-header py-1">
                     <b>{{ \Carbon\Carbon::parse($course->start)->format('H:i') }} -> {{ \Carbon\Carbon::parse($course->end)->format('H:i') }}</b>
                 </div>
